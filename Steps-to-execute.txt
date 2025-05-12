@@ -1,0 +1,8 @@
+# Step 1: Install required libraries
+!pip install streamlit wordcloud requests beautifulsoup4
+
+# Step 2: Save the code to a Python file
+%%writefile wordcloud_app.py
+
+# Step 3: Launch Streamlit and expose the app with LocalTunnel
+!streamlit run wordcloud_app.py & npx localtunnel --port 8501
